@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTĐ Shop</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0/css/all.min.css">
+</head>
+<body>
+    <div id="root">
+        <header class="header gird">
+            <div class="header__logo">
+                <a href="index.html"><img src="./assets/img/logo.png" alt=""></a>
+            </div>
+
+            <div class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a href="">Các sản phẩm</a>
+                        <ul class="header__product-list ">
+                            <li class="header__product-item"><a href="products.html"><p>Tất cả</p></a></li>
+                            <li class="header__product-item"><a href="products.html"><p>Games</p></a></li>
+                            <li class="header__product-item"><a href="products.html"><p>Bảng điều khiên</p></a></li>
+                            <li class="header__product-item"><a href="products.html"><p>Bộ điểu khiển</p></a></li>
+                            <li class="header__product-item"><a href="products.html"><p>Phụ kiện</p></a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar-item"><a href="">Giảm giá</a></li>
+                    <li class="header__navbar-item"><a href="">Về chúng tôi</a></li>
+                    <li class="header__navbar-item btn-lognin">
+                        <a href=""><i class="fa-solid fa-circle-user"></i>
+                            Logn In</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <div class="cart-open"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="cart displayDisabled">
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="ctn__intro">
+                <div class="ctn__intro-bg"><img src="./assets/img/background.jpg" alt=""></div>
+                <div class="ctn__intro-product">
+                    <div class="ctn__intro-infor">
+                        <p>Game mới ra mắt</p>
+                        <div class="ctn__intro-name">CYBER KID INFINITE</div>
+                        <p>Đã có trên stream</p>
+                        <div class="ctn__intro-buynow">
+                            <a href="products.html"><button>Mua ngay</button></a>
+                        </div>
+                    </div>
+                    <img src="./assets/img/Cyber copy.webp" alt="">
+                </div>
+            </div>
+
+            <div class="ctn__show gird">
+                <div class="ctn__show-head">
+                    <p class="ctn-title">BÁN CHẠY NHẤT</p>
+                    <a href="products.html"><button>Xem tất cả</button></a>
+                </div>
+
+                <div class="ctn__show-list ctn__slick-list">
+                    <div class="ctn__product-item" id="0">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/accessories1.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>L503 Headset</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="1">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/accessories2.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>Echo headset</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="2">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/accessories3.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>Impact Gaming Chair</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="3">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/accessories4.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>Mach Gaming Chair</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="4">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/accessories5.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>X-2 Wireless Mouse</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="5">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/accessories6.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>X-2 Wireless Mouse</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ctn__category gird">
+                <div class="ctn__category-title">
+                    <p class="ctn-title">THEO THỂ LOẠI</p>
+                </div>
+
+                <div class="ctn__category-list">
+                    <div class="ctn__category-item">
+                        <a href="products.html">
+                            <div class="ctn__category-item-img">
+                                <div class="ctn__category-item-img-lopgia"></div>
+                                <img src="./assets/img/products/game1.webp" alt="">
+                            </div>
+                            <div class="ctn__category-type">Bảng điều khiển</div>
+                        </a>
+                    </div>
+                    <div class="ctn__category-item">
+                        <a href="products.html">
+                            <div class="ctn__category-item-img">
+                                <div class="ctn__category-item-img-lopgia"></div>
+                                <img src="./assets/img/products/game2.webp" alt="">
+                            </div>
+                            <div class="ctn__category-type">Phụ kiện</div>
+                        </a>
+                    </div>
+                    <div class="ctn__category-item">
+                        <a href="products.html">
+                            <div class="ctn__category-item-img">
+                                <div class="ctn__category-item-img-lopgia"></div>
+                                <img src="./assets/img/products/game3.webp" alt="">
+                            </div>
+                            <div class="ctn__category-type">Bộ điều khiển</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ctn__show ctn__game-trrending gird">
+                <div class="ctn__show-head">
+                    <p class="ctn-title">TRENDING GAMES</p>
+                    <a href="products.html"><button>Xem tất cả</button></a>
+                </div>
+
+                <div class="ctn__show-list ctn__slick-list">
+                    <div class="ctn__product-item" id="20">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/game1.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>L503 Headset</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="21">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/game2.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>Echo headset</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="22">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/game3.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>Impact Gaming Chair</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="23">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/game4.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>Mach Gaming Chair</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="24">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/game5.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>X-2 Wireless Mouse</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                    <div class="ctn__product-item" id="25">
+                        <a href="" class="ctn__product-infor">
+                            <div class="ctn__product-img"><img src="./assets/img/products/game6.webp" alt=""></div>
+                            <div class="ctn__product-name">
+                                <p>X-2 Wireless Mouse</p>
+                                <div class="ctn__product-price">
+                                    <sup>$</sup>
+                                    10000
+                                </div>
+                            </div>
+                        </a>
+                        <button class="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer gird">
+            <div class="footer__content">
+                <div class="footer__content-email">
+                    <p>Nhận thông báo về hoạt động của DTĐ</p>
+                    <div class="footer__content-operation">
+                        <input type="text" placeholder="Nhập địa chỉ email">
+                        <button>Submit</button>
+                    </div>
+                </div>
+
+                <div class="footer__category-list">
+                    <ul class="footer__category-products">
+                        <li class="footer__category-header">Products</li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                    </ul>
+
+                    <ul class="footer__category-store">
+                        <li class="footer__category-header">Store</li>
+                        <li class="footer__category-item">Games</li>
+                        <li class="footer__category-item">Games</li>
+                        <li class="footer__category-item">Games</li>
+                        <li class="footer__category-item">Games</li>
+                        <li class="footer__category-item">Games</li>
+                    </ul>
+
+                    <ul class="footer__category-policy">
+                        <li class="footer__category-header">Policy</li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-item"><a href="">Games</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__link">
+                <div class="footer__link-card">
+                    <div class="footer__link-title">Payment Methods</div>
+                    <ul>
+                        <li><a href=""><img src="./assets/img/card/American Express.webp" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/card/China Union Pay.webp" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/card/Diners.webp" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/card/Discover.webp" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/card/JCB.webp" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/card/Master Card.webp" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/card/PayPal.webp" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/card/Visa.webp" alt=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__link-app">
+                    <div class="footer__link-title">Join the Community</div>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>            
+        </footer>
+
+        
+    </div>
+
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="module" src="./assets/js/slick.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

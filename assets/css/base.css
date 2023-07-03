@@ -1,0 +1,88 @@
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    user-select: none;
+    font-family: "Nunito", sans-serif;
+}
+
+#root {
+    color: #fff;
+    position: relative;
+}
+
+:root {
+    --text-color: #fff;
+    --primary-color: rgb(136, 88, 237);
+}
+
+/* Display */
+.displayDisabled {
+    display: none !important;
+}
+
+.displayEnabledBlock {
+    display: block !important;
+}
+
+.displayEnabledFlex {
+    display: flex !important;
+}
+
+.gird {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.ctn-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes cartFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(240px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes cartFadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(240px);
+    }
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
