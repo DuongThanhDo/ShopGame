@@ -6,7 +6,8 @@
     list-style-type: none;
     text-decoration: none;
     user-select: none;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins" , sans-serif;
+    /* font-family: "Nunito", sans-serif; */
 }
 
 #root {
@@ -58,28 +59,6 @@
     }
     to {
         opacity: 0;
-    }
-}
-
-@keyframes cartFadeIn {
-    from {
-        opacity: 0;
-        transform: translateX(240px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes cartFadeOut {
-    from {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to{
-        opacity: 0;
-        transform: translateX(240px);
     }
 }
 

@@ -60,7 +60,7 @@ header {
 }
 
 .header__navbar-item:first-child:hover .header__product-list {
-    display: block;
+    opacity: 1;
 }
 
 .header__navbar-item:first-child {
@@ -68,15 +68,16 @@ header {
 }
 
 .header__product-list {
-    display: none;
+    opacity: 0;
     position: absolute;
-    top: 30px;
+    top: 36px;
     min-width: 200px;
     height: auto;
     border-radius: 4px;
     background-color: #000;
     box-shadow: 0 10px 20px #43434399;
     border-radius: 20px;
+    transition: all .3s;
 }
 
 .header__product-list::before {
@@ -94,6 +95,7 @@ header {
     display: inline-block;
     background-color: #000000;
     color: #ccc;
+    transition: all .3s;
     /* cursor: pointer; */
 }
 
@@ -108,11 +110,15 @@ header {
 
 .header__product-item:hover {
     background-color: #4b4b4b;
+    padding-left: 15px;
 }
 
-.header__product-item a, 
-.header__product-item:hover a {
+.header__product-item a {
     color: #ccc;
+}
+
+.header__product-item:hover a {
+    color: #fff;
 }
 
 .header__product-item:first-child {
@@ -136,11 +142,16 @@ header {
     color: #000;
     box-shadow: 0 10px 50px rgb(136, 88, 237, 0.2);
     cursor: auto;
-    animation: cartFadeIn ease-out .3s;
+    /* animation: cartFadeIn ease .3s; */
+    transform: translateX(0);
+    opacity: 1;
+    transition: all .3s;
 }
 
-.cartFadeOut {
-    animation: cartFadeOut ease-out .3s;
+.hidden {
+    /* animation: cartFadeOut ease-out .3s; */
+    transform: translateX(100%);
+    opacity: 0;
 }
 
 .cart__header {
@@ -160,17 +171,6 @@ header {
     height: 40px;
     width: 40px;
     cursor: pointer;
-}
-
-.cart-close::after {
-    content: "";
-    position: absolute;
-    width: 2000px;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    left: -2000px;
-    top: 0;
-    animation: fadeIn ease-in .1s;
 }
 
 .cart__container {
@@ -719,7 +719,7 @@ input[type="range"]::-moz-range-thumb {
 
 .ctn__product-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin-top: 60px;
     height: 120vh;
     overflow-y: scroll;

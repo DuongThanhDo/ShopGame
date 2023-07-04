@@ -41,28 +41,20 @@ const setItemArrCart = (item) => {
 const cartOpen = document.querySelector('.cart-open')
 const btnCart = document.querySelector('.cart')
 // Hiển thị Cart
-const displayCart = () => {
-    btnCart.classList.remove('displayDisabled')
-    btnCart.classList.add('displayEnabledBlock')
-    btnCart.classList.remove('cartFadeOut')
-}
 
 btnCart.innerHTML = cartView()
 console.log(cartOpen);
 cartOpen.onclick = () => {
     console.log('hi');
-    displayCart()
+    btnCart.classList.remove('hidden')
+    
 }
 
 // ẩn cart
 const cartClose = document.querySelector('.cart-close')
 console.log(cartClose);
 cartClose.onclick = () => {
-    setTimeout(function () {
-        btnCart.classList.remove('displayEnabledBlock')
-        btnCart.classList.add('displayDisabled')
-    }, 300)
-    btnCart.classList.add('cartFadeOut')
+    btnCart.classList.add('hidden')
 }
 
 // giảm số lượng sản phẩm
