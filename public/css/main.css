@@ -438,6 +438,22 @@ header {
 
 .ctn__product-infor {
     color: #fff;
+    position: relative;
+}
+
+.ctn__product-sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #707070;
 }
 
 .ctn__product-img {

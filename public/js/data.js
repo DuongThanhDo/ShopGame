@@ -3,7 +3,7 @@ export const arrProduct = [
         id: 0,
         img: 'accessories1.webp',
         name: 'L503 Headset',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'accessories',
@@ -23,7 +23,7 @@ export const arrProduct = [
         id: 2,
         img: 'accessories3.webp',
         name: 'Impact Gaming Chair',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'accessories',
@@ -33,7 +33,7 @@ export const arrProduct = [
         id: 3,
         img: 'accessories4.webp',
         name: 'Mach Gaming Chair',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'accessories',
@@ -47,7 +47,7 @@ export const arrProduct = [
         newPrice: 999,
         quantity: 1,
         type: 'accessories',
-        sale: false
+        sale: true
     },
     {
         id: 5,
@@ -63,7 +63,7 @@ export const arrProduct = [
         id: 6,
         img: 'accessories7.webp',
         name: 'Spartan Mechanical Keyboard',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'accessories',
@@ -73,7 +73,7 @@ export const arrProduct = [
         id: 7,
         img: 'accessories8.webp',
         name: 'CO-21 Mechanical Keyboard',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'accessories',
@@ -87,13 +87,13 @@ export const arrProduct = [
         newPrice: 999,
         quantity: 1,
         type: 'console',
-        sale: false
+        sale: true
     },
     {
         id: 9,
         img: 'consoles2.webp',
         name: 'Playbox XZ Gold Edition',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'console',
@@ -113,11 +113,11 @@ export const arrProduct = [
         id: 11,
         img: 'consoles4.webp',
         name: 'Game flow',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'console',
-        sale: false
+        sale: true
     },
     {
         id: 12,
@@ -133,7 +133,7 @@ export const arrProduct = [
         id: 13,
         img: 'consoles6.webp',
         name: 'Wave Gen RX',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'console',
@@ -143,11 +143,11 @@ export const arrProduct = [
         id: 14,
         img: 'controller1.webp',
         name: 'Wave',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'controller',
-        sale: false
+        sale: true
     },
     {
         id: 15,
@@ -173,7 +173,7 @@ export const arrProduct = [
         id: 17,
         img: 'controller4.webp',
         name: 'Flint',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'controller',
@@ -183,11 +183,11 @@ export const arrProduct = [
         id: 18,
         img: 'controller5.webp',
         name: 'Raptor',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'controller',
-        sale: false
+        sale: true
     },
     {
         id: 19,
@@ -203,7 +203,7 @@ export const arrProduct = [
         id: 20,
         img: 'game1.webp',
         name: 'Cyber Kid Infinite',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'game',
@@ -223,11 +223,11 @@ export const arrProduct = [
         id: 22,
         img: 'game3.webp',
         name: 'Chronosplit',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'game',
-        sale: false
+        sale: true
     },
     {
         id: 23,
@@ -243,7 +243,7 @@ export const arrProduct = [
         id: 24,
         img: 'game5.webp',
         name: 'Kira and the Fading Islands',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'game',
@@ -253,7 +253,7 @@ export const arrProduct = [
         id: 25,
         img: 'game6.webp',
         name: 'Ancient Souls',
-        oldPrice: 1000,
+        oldPrice: 0,
         newPrice: 999,
         quantity: 1,
         type: 'game',
