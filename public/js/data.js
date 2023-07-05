@@ -6,7 +6,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -16,7 +16,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -26,7 +26,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -36,7 +36,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -46,7 +46,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -56,7 +56,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -66,7 +66,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -76,7 +76,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'accessories',
         sale: false
     },
     {
@@ -86,7 +86,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'console',
         sale: false
     },
     {
@@ -96,7 +96,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'console',
         sale: false
     },
     {
@@ -106,7 +106,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'console',
         sale: false
     },
     {
@@ -116,7 +116,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'console',
         sale: false
     },
     {
@@ -126,7 +126,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'console',
         sale: false
     },
     {
@@ -136,7 +136,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'console',
         sale: false
     },
     {
@@ -146,7 +146,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'controller',
         sale: false
     },
     {
@@ -156,7 +156,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'controller',
         sale: false
     },
     {
@@ -166,7 +166,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'controller',
         sale: false
     },
     {
@@ -176,7 +176,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'controller',
         sale: false
     },
     {
@@ -186,7 +186,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'controller',
         sale: false
     },
     {
@@ -196,7 +196,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'controller',
         sale: false
     },
     {
@@ -206,7 +206,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'game',
         sale: false
     },
     {
@@ -216,7 +216,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'game',
         sale: false
     },
     {
@@ -226,7 +226,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'game',
         sale: false
     },
     {
@@ -236,7 +236,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'game',
         sale: false
     },
     {
@@ -246,7 +246,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'game',
         sale: false
     },
     {
@@ -256,7 +256,7 @@ export const arrProduct = [
         oldPrice: 1000,
         newPrice: 999,
         quantity: 1,
-        type: '',
+        type: 'game',
         sale: false
     }
 ]

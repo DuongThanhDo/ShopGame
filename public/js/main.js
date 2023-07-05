@@ -1,8 +1,15 @@
 'use strick'
 
-import { cartView,
-    addProductCart } from './Cart.js';
+import { 
+    cartView,
+    addProductCart 
+} from './Cart.js';
 import { arrProduct } from './data.js'
+import { 
+    ctnProductList,
+    ctnHeaderName,
+    addProductPage 
+} from './Products.js'
 
 // localStorage --------------
 
@@ -41,13 +48,15 @@ const setItemArrCart = (item) => {
 const cartOpen = document.querySelector('.cart-open')
 const btnCart = document.querySelector('.cart')
 // Hiển thị Cart
+const displayCart = () => {
+    btnCart.classList.remove('hidden')
+}
 
 btnCart.innerHTML = cartView()
 console.log(cartOpen);
 cartOpen.onclick = () => {
     console.log('hi');
-    btnCart.classList.remove('hidden')
-    
+    displayCart()
 }
 
 // ẩn cart
@@ -128,32 +137,94 @@ UD_product()
 
 // thêm sản phẩm vào cart
 
-const addToCart = document.querySelectorAll('.addtocart')
-console.log(addToCart);
-addToCart.forEach((button, index) => {
-    button.onclick = (event) => {
-        var idProductItem = event.target.parentElement.id
-        const arrCart = getArrCart()
-        var check = true
-        arrProduct.forEach((btn, index) => {
-            if(btn.id === parseInt(idProductItem)) {
-                arrCart.forEach((item, index) => {
-                    if(item.id === parseInt(idProductItem)) {
-                        item.quantity++
-                        setArrCart(arrCart)
-                        check = false
+
+const funAddToCart = () => {
+    const addToCart = document.querySelectorAll('.addtocart')
+    console.log(addToCart);
+    addToCart.forEach((button, index) => {
+        button.onclick = (event) => {
+            var idProductItem = event.target.parentElement.id
+            const arrCart = getArrCart()
+            var check = true
+            arrProduct.forEach((btn, index) => {
+                if(btn.id === parseInt(idProductItem)) {
+                    arrCart.forEach((item, index) => {
+                        if(item.id === parseInt(idProductItem)) {
+                            item.quantity++
+                            setArrCart(arrCart)
+                            check = false
+                        }
+                    })
+                    if(check) {
+                        setItemArrCart(btn)
                     }
-                })
-                if(check) {
-                    setItemArrCart(btn)
+                    UD_product()
+                    displayCart()
                 }
-                UD_product()
-                displayCart()
-            }
-        })
+            })
+        }
+    })
+}
+funAddToCart()
+
+// add product on product page
+const btnHeaderProductItemP = document.querySelectorAll('.header__product-item p')
+
+if(ctnHeaderName != null) {
+    ctnHeaderName.innerHTML = `TẤT CẢ`
+    ctnProductList.innerHTML = addProductPage(arrProduct)
+    
+    funAddToCart()
+}
+
+btnHeaderProductItemP.forEach((item, index) => {
+    item.onclick = (event) => {
+        const  idHeaderProductItem = event.target.parentElement.id
+        const arr = arrTypeProduct(arrProduct, idHeaderProductItem)
+        switch (idHeaderProductItem) {
+            case 'all':
+                setTimeout(() => {
+                    ctnHeaderName.innerHTML = `TẤT CẢ`
+                }, 200);
+                ctnProductList.innerHTML = addProductPage(arrProduct)
+                break;
+            case 'game':
+                setTimeout(() => {
+                    ctnHeaderName.innerHTML = `TRÒ CHƠI`
+                }, 200);
+                ctnProductList.innerHTML = addProductPage(arr)
+                break;
+            case 'console':
+                setTimeout(() => {
+                    ctnHeaderName.innerHTML = `BẢNG ĐIỀU KHIỂN`
+                }, 200);
+                ctnProductList.innerHTML = addProductPage(arr)
+                break;
+            case 'controller':
+                setTimeout(() => {
+                    ctnHeaderName.innerHTML = `BỘ ĐIỀU KHIỂN`
+                }, 200);
+                ctnProductList.innerHTML = addProductPage(arr)
+                break;
+            case 'accessories':
+                setTimeout(() => {
+                    ctnHeaderName.innerHTML = `PHỤ KIỆN`
+                }, 200);
+                ctnProductList.innerHTML = addProductPage(arr)
+                break;
+            default:
+                break;
+        }
+        funAddToCart()
     }
 })
 
-
-
-
+const arrTypeProduct = (arr, type) => {
+    const arrTemp = []
+    arr.forEach((item) => {
+        if(item.type === type) {
+            arrTemp.push(item)
+        }
+    })
+    return arrTemp
+}

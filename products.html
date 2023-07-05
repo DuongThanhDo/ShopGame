@@ -9,8 +9,8 @@
         type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
       />
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/base.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -20,26 +20,31 @@
     <div id="root">
         <header class="header gird">
             <div class="header__logo">
-                <a href="index.html"><img src="./assets/img/logo.png" alt=""></a>
+                <a href="index.html"><img src="./public/img/logo.png" alt=""></a>
             </div>
 
             <div class="header__navbar">
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item header__navbar-item--active">
-                        <a href="">Các sản phẩm</a>
+                        <a href="products.html">SẢN PHẨM</a>
                         <ul class="header__product-list ">
-                            <li class="header__product-item"><a href="products.html"><p>Tất cả</p></a></li>
-                            <li class="header__product-item"><a href="products.html"><p>Games</p></a></li>
-                            <li class="header__product-item"><a href="products.html"><p>Bảng điều khiên</p></a></li>
-                            <li class="header__product-item"><a href="products.html"><p>Bộ điểu khiển</p></a></li>
-                            <li class="header__product-item"><a href="products.html"><p>Phụ kiện</p></a></li>
+                            <li class="header__product-item" id="all">
+                                <p>Tất cả</p></li>
+                            <li class="header__product-item" id="game">
+                                <p>Trò chơi</p></li>
+                            <li class="header__product-item" id="console">
+                                <p>Bảng điều khiên</p></li>
+                            <li class="header__product-item" id="controller">
+                                <p>Bộ điểu khiển</p></li>
+                            <li class="header__product-item" id="accessories">
+                                <p>Phụ kiện</p></li>
                         </ul>
                     </li>
-                    <li class="header__navbar-item"><a href="">Giảm giá</a></li>
-                    <li class="header__navbar-item"><a href="">Về chúng tôi</a></li>
+                    <li class="header__navbar-item"><a href="">GIẢM GIÁ</a></li>
+                    <li class="header__navbar-item"><a href="">VỀ CHÚNG TÔI</a></li>
                     <li class="header__navbar-item btn-lognin">
                         <a href=""><i class="fa-solid fa-circle-user"></i>
-                            Log In</a>
+                            LIÊN HỆ</a>
                     </li>
                     <li class="header__navbar-item">
                         <div class="cart-open"><i class="fa-solid fa-cart-shopping"></i></div>
@@ -52,7 +57,9 @@
         </header>
 
         <div class="container gird">
-            <div class="ctn__header">SHOP ALL</div>
+            <div class="ctn__header">
+
+            </div>
             <div class="ctn__product ">
                 <div class="ctn__product-filter">
                     <div class="ctn__product-filterby">Filter by</div>
@@ -66,16 +73,14 @@
                         </div>
                         <ul>
                             <div class="ctn__product-category-item ctn__product-filter-item">
-                                <li><a href="">All</a></li>
-                                <li><a href="">Consoles</a></li>
-                                <li><a href="">Games</a></li>
-                                <li><a href="">On Sale</a></li>
+                                <li><a href="">Tất cả</a></li>
+                                <li><a href="">Đang giảm giá</a></li>
                             </div>
                         </ul>
                     </div>
                     <div class="ctn__product-price--filter">
                         <div class="ctn__product-filter-head">
-                            <p>Price</p>
+                            <p>Mức giá</p>
                             <div class="btn-show">
                                 <p>+</p>
                                 <p>-</p>
@@ -128,110 +133,7 @@
                     </div>
 
                     <div class="ctn__product-list">
-                        <div class="ctn__product-item" id="0">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories1.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>L503 Headset</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
-                        <div class="ctn__product-item" id="1">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories2.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>Echo headset</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
-                        <div class="ctn__product-item" id="2">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories3.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>Impact Gaming Chair</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
-                        <div class="ctn__product-item" id="3">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories4.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>Mach Gaming Chair</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
-                        <div class="ctn__product-item" id="4">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories5.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>X-2 Wireless Mouse</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
-                        <div class="ctn__product-item" id="5">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories6.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>X-2 Wireless Mouse</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
-                        <div class="ctn__product-item" id="6">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories7.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>X-2 Wireless Mouse</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
-                        <div class="ctn__product-item" id="7">
-                            <a href="" class="ctn__product-infor">
-                                <div class="ctn__product-img"><img src="./assets/img/products/accessories8.webp" alt=""></div>
-                                <div class="ctn__product-name">
-                                    <p>X-2 Wireless Mouse</p>
-                                    <div class="ctn__product-price">
-                                        <sup>$</sup>
-                                        10000
-                                    </div>
-                                </div>
-                            </a>
-                            <button class="addtocart">Add to Cart</button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>   
@@ -279,14 +181,14 @@
                 <div class="footer__link-card">
                     <div class="footer__link-title">Payment Methods</div>
                     <ul>
-                        <li><a href=""><img src="./assets/img/card/American Express.webp" alt=""></a></li>
-                        <li><a href=""><img src="./assets/img/card/China Union Pay.webp" alt=""></a></li>
-                        <li><a href=""><img src="./assets/img/card/Diners.webp" alt=""></a></li>
-                        <li><a href=""><img src="./assets/img/card/Discover.webp" alt=""></a></li>
-                        <li><a href=""><img src="./assets/img/card/JCB.webp" alt=""></a></li>
-                        <li><a href=""><img src="./assets/img/card/Master Card.webp" alt=""></a></li>
-                        <li><a href=""><img src="./assets/img/card/PayPal.webp" alt=""></a></li>
-                        <li><a href=""><img src="./assets/img/card/Visa.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/American Express.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/China Union Pay.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/Diners.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/Discover.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/JCB.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/Master Card.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/PayPal.webp" alt=""></a></li>
+                        <li><a href=""><img src="./public/img/card/Visa.webp" alt=""></a></li>
                     </ul>
                 </div>
 
@@ -316,9 +218,9 @@
         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
-    <script type="module" src="./assets/js/Products.js"></script>
-    <script type="module" src="./assets/js/slick.js"></script>
-    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./public/js/Products.js"></script>
+    <script type="module" src="./public/js/slick.js"></script>
+    <script type="module" src="./public/js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

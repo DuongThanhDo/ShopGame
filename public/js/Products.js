@@ -1,5 +1,7 @@
 'use strick'
 
+import { arrProduct } from './data.js'
+
 // show filter
 const filterHead = document.querySelectorAll('.ctn__product-filter-head')
 const btnShow = document.querySelectorAll('.btn-show')
@@ -13,6 +15,26 @@ filterHead.forEach((item, index) => {
     }
 })
 
+export const addProductPage = (arr) => {
+    return arr.map((item, index) => {
+        return `
+            <div class="ctn__product-item" id="${item.id}">
+                <a href="" class="ctn__product-infor">
+                    <div class="ctn__product-img"><img src="./public/img/products/${item.img}" alt=""></div>
+                    <div class="ctn__product-name">
+                        <p>${item.name}</p>
+                        <div class="ctn__product-price">
+                            <p>$</p>
+                            <p>${item.newPrice}</p>
+                        </div>
+                    </div>
+                </a>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+        `
+    }).join("")
+
+}
 
 // price range
 const rangeInput = document.querySelectorAll('.price__range-input input')
@@ -64,10 +86,13 @@ rangeInput.forEach((item, index) => {
 // sort
 const ctnProductSort = document.querySelector('.ctn__product-sort')
 const btnShowSort = document.querySelector('.btn-show-sort')
+console.log('hi');
 
-ctnProductSort.onclick = () => {
-    btnShowSort.classList.toggle('rotate180')
-    document.querySelector('.ctn__product-sort-list').classList.toggle('displayEnabledBlock')
+if(ctnProductSort != null) {
+    ctnProductSort.onclick = () => {
+        btnShowSort.classList.toggle('rotate180')
+        document.querySelector('.ctn__product-sort-list').classList.toggle('displayEnabledBlock')
+    }
 }
 
 const ctnProductSortItem = document.querySelectorAll('.ctn__product-sort-item')
@@ -79,3 +104,7 @@ ctnProductSortItem.forEach((item, index) => {
         document.querySelector('.ctn__product-sort-name').innerHTML = `${sortName[index]}`
     }
 })
+
+// add product
+export const ctnProductList = document.querySelector('.ctn__product-list')
+export const ctnHeaderName = document.querySelector('.ctn__header')
