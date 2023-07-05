@@ -171,7 +171,7 @@ funAddToCart()
 const btnHeaderProductItemP = document.querySelectorAll('.header__product-item p')
 
 if(ctnHeaderName != null) {
-    ctnHeaderName.innerHTML = `TẤT CẢ`
+    ctnHeaderName.textContent = `TẤT CẢ`
     ctnProductList.innerHTML = addProductPage(arrProduct)
     
     funAddToCart()
@@ -184,31 +184,31 @@ btnHeaderProductItemP.forEach((item, index) => {
         switch (idHeaderProductItem) {
             case 'all':
                 setTimeout(() => {
-                    ctnHeaderName.innerHTML = `TẤT CẢ`
+                    ctnHeaderName.textContent = `TẤT CẢ`
                 }, 200);
                 ctnProductList.innerHTML = addProductPage(arrProduct)
                 break;
             case 'game':
                 setTimeout(() => {
-                    ctnHeaderName.innerHTML = `TRÒ CHƠI`
+                    ctnHeaderName.textContent = `TRÒ CHƠI`
                 }, 200);
                 ctnProductList.innerHTML = addProductPage(arr)
                 break;
             case 'console':
                 setTimeout(() => {
-                    ctnHeaderName.innerHTML = `BẢNG ĐIỀU KHIỂN`
+                    ctnHeaderName.textContent = `BẢNG ĐIỀU KHIỂN`
                 }, 200);
                 ctnProductList.innerHTML = addProductPage(arr)
                 break;
             case 'controller':
                 setTimeout(() => {
-                    ctnHeaderName.innerHTML = `BỘ ĐIỀU KHIỂN`
+                    ctnHeaderName.textContent = `BỘ ĐIỀU KHIỂN`
                 }, 200);
                 ctnProductList.innerHTML = addProductPage(arr)
                 break;
             case 'accessories':
                 setTimeout(() => {
-                    ctnHeaderName.innerHTML = `PHỤ KIỆN`
+                    ctnHeaderName.textContent = `PHỤ KIỆN`
                 }, 200);
                 ctnProductList.innerHTML = addProductPage(arr)
                 break;
