@@ -110,4 +110,4 @@ ctnProductSortItem.forEach((item, index) => {
 
 // add product
 export const ctnProductList = document.querySelector('.ctn__product-list')
-export const ctnHeaderName = document.querySelector('.ctn__header')
+export const ctnHeaderName = document.querySelector('.ctn__header-tittle')

@@ -137,7 +137,6 @@ UD_product()
 
 // thêm sản phẩm vào cart
 
-
 const funAddToCart = () => {
     const addToCart = document.querySelectorAll('.addtocart')
     console.log(addToCart);
