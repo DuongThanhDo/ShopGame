@@ -22,7 +22,7 @@ export const addProductPage = (arr) => {
                 <a href="" class="ctn__product-infor">
                     <div class="${item.sale === true ? 'ctn__product-sale' : 'displayDisabled'}">SALE</div>
                     <div class="ctn__product-img">
-                        <img src="./public/img/products/${item.img}" alt="">
+                        <img src="../assets/img/products/${item.img}" alt="">
                     </div>
                     <div class="ctn__product-name">
                         <p>${item.name}</p>

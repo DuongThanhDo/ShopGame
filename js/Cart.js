@@ -26,7 +26,7 @@ export const addProductCart = (arrCart) => {
     return arrCart.map((item, index) => {
         return `
             <div class="cart__product">
-                <img src="./public/img/products/${item.img}" alt="">
+                <img src="./assets/img/products/${item.img}" alt="">
                 <div class="cart__product-infor">
                     <div class="cart__product-name">${item.name}</div>
                     <div class="cart__product-price">$${item.newPrice}</div>
