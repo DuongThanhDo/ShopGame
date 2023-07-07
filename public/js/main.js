@@ -167,20 +167,20 @@ const funAddToCart = () => {
 funAddToCart()
 
 // add product on product page
-const btnHeaderProductItemP = document.querySelectorAll('.header__product-item p')
+const btnHeaderProductItemP = document.querySelectorAll('.header__product-item')
 
-if(ctnHeaderName != null) {
-    ctnHeaderName.textContent = `TẤT CẢ`
-    ctnProductList.innerHTML = addProductPage(arrProduct)
+// if(ctnHeaderName != null) {
+//     ctnHeaderName.textContent = `TẤT CẢ`
+//     ctnProductList.innerHTML = addProductPage(arrProduct)
     
-    funAddToCart()
-}
+//     funAddToCart()
+// }
 
 btnHeaderProductItemP.forEach((item, index) => {
     item.onclick = (event) => {
-        const  idHeaderProductItem = event.target.parentElement.id
-        const arr = arrTypeProduct(arrProduct, idHeaderProductItem)
-        switch (idHeaderProductItem) {
+        const classHeaderProductItem = item.classList[item.classList.length - 1]
+        console.log(classHeaderProductItem);
+        switch (classHeaderProductItem) {
             case 'all':
                 setTimeout(() => {
                     ctnHeaderName.textContent = `TẤT CẢ`
@@ -227,3 +227,8 @@ const arrTypeProduct = (arr, type) => {
     })
     return arrTemp
 }
+
+// const testgame = document.querySelectorAll('.header__product-item')
+// testgame.forEach((item, index) => {
+//     console.log(item.classList[item.classList.length - 1]);
+// })
