@@ -796,10 +796,18 @@ input[type="range"]::-moz-range-thumb {
 
 .ctn__category-list {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     padding-bottom: 100px;
     justify-content: space-between;
     align-items: center;
+}
+
+.ctn__category-item {
+    margin: 10px;
+}
+
+.slick-track {
+    width: 100%;
 }
 
 .ctn__category-item-img {

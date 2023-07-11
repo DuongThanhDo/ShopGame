@@ -41,6 +41,7 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $(".ctn__category-list").slick({
+      slidesToShow: 3, // so luong anh hien thi
       responsive: [
         {
           breakpoint: 480,
