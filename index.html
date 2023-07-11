@@ -11,6 +11,7 @@
       />
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,22 +19,25 @@
 </head>
 <body>
     <div id="root">
-        <header class="header gird">
+        <header class="header gird ">
             <div class="header__logo">
                 <a href="index.html"><img src="./assets/img/logo.png" alt=""></a>
             </div>
 
+            <div class="header_navbar-not-pc">
+                <i class="fa-solid fa-list"></i>
+            </div>
+
             <div class="header__navbar">
-                
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item">
                         <a href="products.html">SẢN PHẨM</a>
                         <ul class="header__product-list ">
-                            <li class="header__product-item all"><a href="products.html"><p>Tất cả</p></a></li>
-                            <li class="header__product-item game"><a href="products.html"><p>Trò chơi</p></a></li>
-                            <li class="header__product-item console"><a href="products.html"><p>Bảng điều khiên</p></a></li>
-                            <li class="header__product-item controller"><a href="products.html"><p>Bộ điểu khiển</p></a></li>
-                            <li class="header__product-item accessories"><a href="products.html"><p>Phụ kiện</p></a></li>
+                            <li class="header__product-item" id="all"><a href="products.html"><p>Tất cả</p></a></li>
+                            <li class="header__product-item" id="game"><a href="products.html"><p>Trò chơi</p></a></li>
+                            <li class="header__product-item" id="console"><a href="products.html"><p>Bảng điều khiên</p></a></li>
+                            <li class="header__product-item" id=" controller"><a href="products.html"><p>Bộ điểu khiển</p></a></li>
+                            <li class="header__product-item " id="accessories"><a href="products.html"><p>Phụ kiện</p></a></li>
                         </ul>
                     </li>
                     <li class="header__navbar-item"><a href="">GIẢM GIÁ</a></li>
@@ -59,7 +63,7 @@
                     <div class="ctn__intro-infor">
                         <p>Game mới ra mắt</p>
                         <div class="ctn__intro-name">CYBER KID INFINITE</div>
-                        <p>Đã có trên steam</p>
+                        <p class="onSteam">Đã có trên steam</p>
                         <div class="ctn__intro-buynow">
                             <a href="products.html"><button>Mua ngay</button></a>
                         </div>

@@ -167,54 +167,55 @@ const funAddToCart = () => {
 funAddToCart()
 
 // add product on product page
-const btnHeaderProductItemP = document.querySelectorAll('.header__product-item')
+const btnHeaderProductItem = document.querySelectorAll('.header__product-item')
+const btnHeaderProductItemA = document.querySelectorAll('.header__product-item a')
 
-// if(ctnHeaderName != null) {
-//     ctnHeaderName.textContent = `TẤT CẢ`
-//     ctnProductList.innerHTML = addProductPage(arrProduct)
+if(ctnHeaderName != null) {
+    ctnHeaderName.textContent = `TẤT CẢ`
+    ctnProductList.innerHTML = addProductPage(arrProduct)
     
-//     funAddToCart()
-// }
+    funAddToCart()
+}
 
-btnHeaderProductItemP.forEach((item, index) => {
+
+btnHeaderProductItem.forEach((item, index) => {
     item.onclick = (event) => {
-        const classHeaderProductItem = item.classList[item.classList.length - 1]
-        console.log(classHeaderProductItem);
-        switch (classHeaderProductItem) {
-            case 'all':
-                setTimeout(() => {
+        setTimeout(() => {
+            // const classHeaderProductItem = item.classList[item.classList.length - 1]
+            // console.log(classHeaderProductItem);
+
+            const idHeaderProductItem = item.id
+            console.log(idHeaderProductItem);
+
+            const arr = arrTypeProduct(arrProduct, idHeaderProductItem)
+
+            switch (idHeaderProductItem) {
+                case 'all':
                     ctnHeaderName.textContent = `TẤT CẢ`
-                }, 200);
-                ctnProductList.innerHTML = addProductPage(arrProduct)
-                break;
-            case 'game':
-                setTimeout(() => {
+                    ctnProductList.innerHTML = addProductPage(arrProduct)
+                    break;
+                case 'game':
                     ctnHeaderName.textContent = `TRÒ CHƠI`
-                }, 200);
-                ctnProductList.innerHTML = addProductPage(arr)
-                break;
-            case 'console':
-                setTimeout(() => {
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+                case 'console':
                     ctnHeaderName.textContent = `BẢNG ĐIỀU KHIỂN`
-                }, 200);
-                ctnProductList.innerHTML = addProductPage(arr)
-                break;
-            case 'controller':
-                setTimeout(() => {
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+                case 'controller':
                     ctnHeaderName.textContent = `BỘ ĐIỀU KHIỂN`
-                }, 200);
-                ctnProductList.innerHTML = addProductPage(arr)
-                break;
-            case 'accessories':
-                setTimeout(() => {
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+                case 'accessories':
                     ctnHeaderName.textContent = `PHỤ KIỆN`
-                }, 200);
-                ctnProductList.innerHTML = addProductPage(arr)
-                break;
-            default:
-                break;
-        }
-        funAddToCart()
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+                default:
+                    break;
+            }
+            funAddToCart()
+            
+        }, 300);
     }
 })
 

@@ -9,6 +9,50 @@ $(document).ready(function(){
       draggable: false, // khong cho vuot nua
       dots: false, // hien thi vi tri anh
       prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-      nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+      nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+
+  $(document).ready(function(){
+    $(".ctn__category-list").slick({
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows : false, // "false" bo 2 nut trai phai, thay vao do la vuot
+            autoplay: true, // chay tu dong
+            autoplaySpeed: 2000, // set time
+            infinite: true, // "true" chay vo tan, "false" co han
+          }
+        }
+      ]
     });
   });
