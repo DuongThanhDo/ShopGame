@@ -6,7 +6,9 @@ import { arrProduct } from './data.js'
 const filterHead = document.querySelectorAll('.ctn__product-filter-head')
 const btnShow = document.querySelectorAll('.btn-show')
 const filterItem = document.querySelectorAll('.ctn__product-filter-item')
+// const title2 = document.querySelector(".ctn__header-tittle")
 
+// title2.textContent("product")
 filterHead.forEach((item, index) => {
     item.onclick = () => {
         console.log(item);

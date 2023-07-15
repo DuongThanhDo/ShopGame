@@ -12,13 +12,19 @@ export const cartView = () => {
         <div class="cart__container"></div>
 
         <div class="cart__subtotal">
-            Subtotal
+            Thành tiền
             <div class="cart__subtotal-money"></div>
         </div>
 
         <footer class="cart__footer">
-            <a href="cart.html"><button>View Cart</button></a>
+            <button>View Cart</button>
         </footer>
+    `
+}
+
+export const cartViewPage = () => {
+    return `
+        <div class="cart__container"></div>
     `
 }
 

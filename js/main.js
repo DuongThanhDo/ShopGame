@@ -1,7 +1,9 @@
+
 'use strick'
 
 import { 
     cartView,
+    cartViewPage,
     addProductCart 
 } from './Cart.js';
 import { arrProduct } from './data.js'
@@ -47,15 +49,17 @@ const setItemArrCart = (item) => {
 
 const cartOpen = document.querySelector('.cart-open')
 const btnCart = document.querySelector('.cart')
+const btnCartPage = document.querySelector('.cart-page')
+
 // Hiển thị Cart
 const displayCart = () => {
     btnCart.classList.remove('hidden')
 }
 
 btnCart.innerHTML = cartView()
+btnCartPage.innerHTML = cartViewPage()
 console.log(cartOpen);
 cartOpen.onclick = () => {
-    console.log('hi');
     displayCart()
 }
 
@@ -72,10 +76,19 @@ const reduceQuantityProduct = () => {
     const arrCart = getArrCart()
     btnReduceQuantityProduct.forEach((btn, index) => {
         btn.onclick = () => {
-            if(arrCart[index].quantity > 1){
-                arrCart[index].quantity--
-                setArrCart(arrCart)
-                UD_product()
+            console.log(index);
+            if(index + 1 > arrCart.length)
+                if(arrCart[index-arrCart.length].quantity > 1){
+                    arrCart[index-arrCart.length].quantity--
+                    setArrCart(arrCart)
+                    UD_product()
+                }
+            else {
+                if(arrCart[index].quantity > 1){
+                    arrCart[index].quantity--
+                    setArrCart(arrCart)
+                    UD_product()
+                }
             }
         }
     })
@@ -87,7 +100,8 @@ const increaseQuantityProduct = () => {
     const arrCart = getArrCart()
     btnIncreaseQuantityProduct.forEach((btn, index) => {
         btn.onclick = () => {
-            arrCart[index].quantity++
+            if(index + 1 > arrCart.length) arrCart[index-arrCart.length].quantity++
+            else arrCart[index].quantity++
             setArrCart(arrCart)
             UD_product()
         }
@@ -97,10 +111,13 @@ const increaseQuantityProduct = () => {
 // delete sản phẩm trong cart
 const delProduct = () => {
     const btnDelProduct = document.querySelectorAll('.cart__product-del')
+    // console.log(btnDelProduct);
     const arrCart = getArrCart()
     btnDelProduct.forEach((btn, index) => {
         btn.onclick = () => {
-            arrCart.splice(index, 1)
+            // console.log(index+1, arrCart.length);
+            if(index + 1 > arrCart.length) arrCart.splice(index-arrCart.length, 1)
+            else arrCart.splice(index, 1)
             setArrCart(arrCart)
             UD_product()
         }
@@ -119,27 +136,34 @@ const sumMoney = () => {
 
 // Update cart
 const UD_product = () => {
-    const cartContainer = document.querySelector('.cart__container')
+    const cartContainer = document.querySelectorAll('.cart__container')
+    const countProduct = document.querySelector('.ctn__cart-bill-total')
     const arrCart = getArrCart()
 
     if(arrCart.length <= 0) {
-        cartContainer.innerHTML = `${`<p style="color: #fff;margin: 240px 0 0 100px">Không có sản phẩm</p>`}`
+        cartContainer.forEach(item => {
+            item.innerHTML = `${`<p class="cart_no-product">Không có sản phẩm</p>`}`
+        })
     }else {
-        cartContainer.innerHTML = addProductCart(arrCart)
+        cartContainer.forEach(item => {
+            item.innerHTML = addProductCart(arrCart)
+        })
     }
     reduceQuantityProduct()
     increaseQuantityProduct()
     delProduct()
-    const cartSubtotalMoney = document.querySelector('.cart__subtotal-money')
-    cartSubtotalMoney.innerHTML = `$${sumMoney()}`
+    const cartSubtotalMoney = document.querySelectorAll('.cart__subtotal-money')
+    cartSubtotalMoney.forEach(item => {
+        item.textContent = `${sumMoney()}`
+    })
+    countProduct.textContent = arrCart.length
 }
 UD_product()
 
-// thêm sản phẩm vào cart
+//Thêm sản phẩm vào cart
 
 const funAddToCart = () => {
     const addToCart = document.querySelectorAll('.addtocart')
-    console.log(addToCart);
     addToCart.forEach((button, index) => {
         button.onclick = (event) => {
             var idProductItem = event.target.parentElement.id
@@ -170,12 +194,13 @@ funAddToCart()
 const btnHeaderProductItem = document.querySelectorAll('.header__product-item')
 const btnHeaderProductItemA = document.querySelectorAll('.header__product-item a')
 
-if(ctnHeaderName != null) {
-    ctnHeaderName.textContent = `TẤT CẢ`
-    ctnProductList.innerHTML = addProductPage(arrProduct)
+console.log(ctnHeaderName);
+// if(ctnHeaderName != null) {
+//     ctnHeaderName.textContent = `TẤT CẢ`
+//     ctnProductList.innerHTML = addProductPage(arrProduct)
     
-    funAddToCart()
-}
+//     funAddToCart()
+// }
 
 
 btnHeaderProductItem.forEach((item, index) => {
@@ -185,7 +210,6 @@ btnHeaderProductItem.forEach((item, index) => {
             // console.log(classHeaderProductItem);
 
             const idHeaderProductItem = item.id
-            console.log(idHeaderProductItem);
 
             const arr = arrTypeProduct(arrProduct, idHeaderProductItem)
 
@@ -233,3 +257,16 @@ const arrTypeProduct = (arr, type) => {
 // testgame.forEach((item, index) => {
 //     console.log(item.classList[item.classList.length - 1]);
 // })
+
+
+const viewCart = document.querySelector('.cart__footer button')
+console.log(viewCart);
+viewCart.onclick = () => {
+    const noCart = document.querySelector('.no-Cart')
+    const isCart = document.querySelector('.is_cart')
+    
+    noCart.classList.add('displayDisabled')
+    isCart.classList.remove('displayDisabled')
+    
+    btnCart.classList.add('hidden')
+}
