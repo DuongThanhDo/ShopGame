@@ -33,24 +33,8 @@
                     <li class="header__navbar-item header__navbar-item--active">
                         <a href="products.html">SẢN PHẨM</a>
                         <ul class="header__product-list ">
-                            <li class="header__product-item" id="all">
-                                <p>Tất cả</p></li>
-                            <li class="header__product-item" id="game">
-                                <p>Trò chơi</p></li>
-                            <li class="header__product-item" id="console">
-                                <p>Bảng điều khiên</p></li>
-                            <li class="header__product-item" id="controller">
-                                <p>Bộ điểu khiển</p></li>
-                            <li class="header__product-item" id="accessories">
-                                <p>Phụ kiện</p></li>
+                            <li class="header__product-item" id="all"><a href="products.html"><p>Tất cả</p></a></li>
                         </ul>
-                        <!-- <ul class="header__product-list ">
-                            <li class="header__product-item all"><a href="products.html"><p>Tất cả</p></a></li>
-                            <li class="header__product-item game"><a href="products.html"><p>Trò chơi</p></a></li>
-                            <li class="header__product-item console"><a href="products.html"><p>Bảng điều khiên</p></a></li>
-                            <li class="header__product-item controller"><a href="products.html"><p>Bộ điểu khiển</p></a></li>
-                            <li class="header__product-item accessories"><a href="products.html"><p>Phụ kiện</p></a></li>
-                        </ul> -->
                     </li>
                     <li class="header__navbar-item"><a href="">GIẢM GIÁ</a></li>
                     <li class="header__navbar-item"><a href="">VỀ CHÚNG TÔI</a></li>
@@ -80,16 +64,16 @@
                 </div>
             </div>
             <div class="ctn__product ">
-
                 <div class="ctn_product-filter-no-pc">
                     <i class="fa-solid fa-filter"></i>
                 </div>
 
                 <div class="ctn__product-filter">
                     <div class="ctn__product-filterby">Filter by</div>
-                    <div class="ctn__product-category">
+
+                    <div class="ctn__product-list-item ctn__product-category">
                         <div class="ctn__product-filter-head">
-                            <p>Category</p>
+                            <p>Các sản phẩm</p>
                             <div class="btn-show">
                                 <p>+</p>
                                 <p>-</p>
@@ -97,12 +81,39 @@
                         </div>
                         <ul>
                             <div class="ctn__product-category-item ctn__product-filter-item">
-                                <li><a href="">Tất cả</a></li>
-                                <li><a href="">Đang giảm giá</a></li>
+                                <li class="filter__product-item" id="all">
+                                    <p>Tất cả</p></li>
+                                <li class="filter__product-item" id="game">
+                                    <p>Trò chơi</p></li>
+                                <li class="filter__product-item" id="console">
+                                    <p>Bảng điều khiên</p></li>
+                                <li class="filter__product-item" id="controller">
+                                    <p>Bộ điểu khiển</p></li>
+                                <li class="filter__product-item" id="accessories">
+                                    <p>Phụ kiện</p></li>
                             </div>
                         </ul>
                     </div>
-                    <div class="ctn__product-price--filter">
+
+                    <div class="ctn__product-list-item ctn__product-category">
+                        <div class="ctn__product-filter-head">
+                            <p>Loại</p>
+                            <div class="btn-show">
+                                <p>+</p>
+                                <p>-</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <div class="ctn__product-category-item ctn__product-filter-item">
+                                <li class="filter__product-item">
+                                    <p>Tất cả</p></li>
+                                <li class="filter__product-item">
+                                    <p>Giảm giá</p></li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="ctn__product-list-item ctn__product-price--filter">
                         <div class="ctn__product-filter-head">
                             <p>Mức giá</p>
                             <div class="btn-show">
@@ -142,7 +153,6 @@
                         <div class="ctn__product-sort-title">
                             <p class="ctn__product-sort-name">Sort by</p>
                             <ul class="ctn__product-sort-list">
-                                <li class="ctn__product-sort-item">Sort by</li>
                                 <li class="ctn__product-sort-item">Newest</li>
                                 <li class="ctn__product-sort-item">Price (low to high)</li>
                                 <li class="ctn__product-sort-item">Price (high to low)</li>
@@ -210,35 +220,34 @@
 
                 <div class="footer__category-list">
                     <ul class="footer__category-products">
-                        <li class="footer__category-header">Products</li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-header">Các sản phẩm</li>
+                        <li class="footer__category-item"><a href="">Trò chơi</a></li>
+                        <li class="footer__category-item"><a href="">Bộ điều khiển</a></li>
+                        <li class="footer__category-item"><a href="">Bảng điều khiển</a></li>
+                        <li class="footer__category-item"><a href="">Phụ kiện</a></li>
                     </ul>
 
                     <ul class="footer__category-store">
-                        <li class="footer__category-header">Store</li>
-                        <li class="footer__category-item">Games</li>
-                        <li class="footer__category-item">Games</li>
-                        <li class="footer__category-item">Games</li>
-                        <li class="footer__category-item">Games</li>
-                        <li class="footer__category-item">Games</li>
+                        <li class="footer__category-header">Cửa hàng</li>
+                        <li class="footer__category-item">1 kiệt 10 phường An Cựu</li>
+                        <li class="footer__category-item">Th2-Th7: 9am - 9pm</li>
+                        <li class="footer__category-item">dohong@gmail.com</li>
+                        <li class="footer__category-item">0902207049</li>
                     </ul>
 
                     <ul class="footer__category-policy">
-                        <li class="footer__category-header">Policy</li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
-                        <li class="footer__category-item"><a href="">Games</a></li>
+                        <li class="footer__category-header">Chính sách</li>
+                        <li class="footer__category-item"><a href="">Điều khoản và điều kiện</a></li>
+                        <li class="footer__category-item"><a href="">Chính sách vận chuyển</a></li>
+                        <li class="footer__category-item"><a href="">Chính sách hoàn tiền</a></li>
+                        <li class="footer__category-item"><a href="">Chính sách bảo mật</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer__link">
                 <div class="footer__link-card">
-                    <div class="footer__link-title">Payment Methods</div>
+                    <div class="footer__link-title">Phương thức thanh toán</div>
                     <ul>
                         <li><a href=""><img src="./assets/img/card/American Express.webp" alt=""></a></li>
                         <li><a href=""><img src="./assets/img/card/China Union Pay.webp" alt=""></a></li>
@@ -252,7 +261,7 @@
                 </div>
 
                 <div class="footer__link-app">
-                    <div class="footer__link-title">Join the Community</div>
+                    <div class="footer__link-title">Tham gia vào cộng đồng</div>
                     <ul>
                         <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>

@@ -8,8 +8,6 @@ import {
 } from './Cart.js';
 import { arrProduct } from './data.js'
 import { 
-    ctnProductList,
-    ctnHeaderName,
     addProductPage 
 } from './Products.js'
 
@@ -46,6 +44,23 @@ const setItemArrCart = (item) => {
 }
 
 // .......................................................
+export const arrTypeProduct = (arr, type) => {
+    const arrTemp = []
+    arr.forEach((item) => {
+        if(item.type === type) {
+            arrTemp.push(item)
+        }
+    })
+    return arrTemp
+}
+
+const ctnShowList = document.querySelectorAll('.ctn__show-list')
+const copyArr = arrProduct.slice(0, 6)
+const copyArrGame = arrTypeProduct(arrProduct, 'game').slice(0, 6)
+// if(ctnShowList[0] !== null) {
+//     ctnShowList[0].innerHTML = addProductPage(copyArr)
+//     ctnShowList[1].innerHTML = addProductPage(copyArrGame)
+// }
 
 const cartOpen = document.querySelector('.cart-open')
 const btnCart = document.querySelector('.cart')
@@ -162,7 +177,7 @@ UD_product()
 
 //Thêm sản phẩm vào cart
 
-const funAddToCart = () => {
+export const funAddToCart = () => {
     const addToCart = document.querySelectorAll('.addtocart')
     addToCart.forEach((button, index) => {
         button.onclick = (event) => {
@@ -189,75 +204,6 @@ const funAddToCart = () => {
     })
 }
 funAddToCart()
-
-// add product on product page
-const btnHeaderProductItem = document.querySelectorAll('.header__product-item')
-const btnHeaderProductItemA = document.querySelectorAll('.header__product-item a')
-
-console.log(ctnHeaderName);
-// if(ctnHeaderName != null) {
-//     ctnHeaderName.textContent = `TẤT CẢ`
-//     ctnProductList.innerHTML = addProductPage(arrProduct)
-    
-//     funAddToCart()
-// }
-
-
-btnHeaderProductItem.forEach((item, index) => {
-    item.onclick = (event) => {
-        setTimeout(() => {
-            // const classHeaderProductItem = item.classList[item.classList.length - 1]
-            // console.log(classHeaderProductItem);
-
-            const idHeaderProductItem = item.id
-
-            const arr = arrTypeProduct(arrProduct, idHeaderProductItem)
-
-            switch (idHeaderProductItem) {
-                case 'all':
-                    ctnHeaderName.textContent = `TẤT CẢ`
-                    ctnProductList.innerHTML = addProductPage(arrProduct)
-                    break;
-                case 'game':
-                    ctnHeaderName.textContent = `TRÒ CHƠI`
-                    ctnProductList.innerHTML = addProductPage(arr)
-                    break;
-                case 'console':
-                    ctnHeaderName.textContent = `BẢNG ĐIỀU KHIỂN`
-                    ctnProductList.innerHTML = addProductPage(arr)
-                    break;
-                case 'controller':
-                    ctnHeaderName.textContent = `BỘ ĐIỀU KHIỂN`
-                    ctnProductList.innerHTML = addProductPage(arr)
-                    break;
-                case 'accessories':
-                    ctnHeaderName.textContent = `PHỤ KIỆN`
-                    ctnProductList.innerHTML = addProductPage(arr)
-                    break;
-                default:
-                    break;
-            }
-            funAddToCart()
-            
-        }, 300);
-    }
-})
-
-const arrTypeProduct = (arr, type) => {
-    const arrTemp = []
-    arr.forEach((item) => {
-        if(item.type === type) {
-            arrTemp.push(item)
-        }
-    })
-    return arrTemp
-}
-
-// const testgame = document.querySelectorAll('.header__product-item')
-// testgame.forEach((item, index) => {
-//     console.log(item.classList[item.classList.length - 1]);
-// })
-
 
 const viewCart = document.querySelector('.cart__footer button')
 console.log(viewCart);

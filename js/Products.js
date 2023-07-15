@@ -1,6 +1,9 @@
 'use strick'
 
 import { arrProduct } from './data.js'
+import { arrTypeProduct,
+        funAddToCart
+ } from './main.js'
 
 // show filter
 const filterHead = document.querySelectorAll('.ctn__product-filter-head')
@@ -102,14 +105,61 @@ if(ctnProductSort != null) {
 
 const ctnProductSortItem = document.querySelectorAll('.ctn__product-sort-item')
 
-const sortName = ['Sort by','Newest','Price (low to high)','Price (high to low)','Name A-Z','Name Z-A']
-
 ctnProductSortItem.forEach((item, index) => {
     item.onclick = () => {
-        document.querySelector('.ctn__product-sort-name').innerHTML = `${sortName[index]}`
+        document.querySelector('.ctn__product-sort-name').innerHTML = item.textContent
     }
 })
 
 // add product
-export const ctnProductList = document.querySelector('.ctn__product-list')
-export const ctnHeaderName = document.querySelector('.ctn__header-tittle')
+const ctnProductList = document.querySelector('.ctn__product-list')
+const ctnHeaderName = document.querySelector('.ctn__header-tittle')
+
+console.log(ctnHeaderName);
+ctnHeaderName.textContent = `TẤT CẢ`
+ctnProductList.innerHTML = addProductPage(arrProduct)
+funAddToCart()
+
+// add product on product page
+const btnHeaderProductItem = document.querySelectorAll('.filter__product-item')
+
+btnHeaderProductItem.forEach((item, index) => {
+    item.onclick = (event) => {
+        setTimeout(() => {
+            // const classHeaderProductItem = item.classList[item.classList.length - 1]
+            // console.log(classHeaderProductItem);
+
+            const idHeaderProductItem = item.id
+
+            const arr = arrTypeProduct(arrProduct, idHeaderProductItem)
+
+            switch (idHeaderProductItem) {
+                case 'all':
+                    ctnHeaderName.textContent = `TẤT CẢ`
+                    ctnProductList.innerHTML = addProductPage(arrProduct)
+                    break;
+                case 'game':
+                    ctnHeaderName.textContent = `TRÒ CHƠI`
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+                case 'console':
+                    ctnHeaderName.textContent = `BẢNG ĐIỀU KHIỂN`
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+                case 'controller':
+                    ctnHeaderName.textContent = `BỘ ĐIỀU KHIỂN`
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+                case 'accessories':
+                    ctnHeaderName.textContent = `PHỤ KIỆN`
+                    ctnProductList.innerHTML = addProductPage(arr)
+                    break;
+
+                default:
+                    break;
+            }
+            funAddToCart()
+            
+        }, 300);
+    }
+})
