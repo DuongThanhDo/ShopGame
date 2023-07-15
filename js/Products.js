@@ -37,7 +37,7 @@ export const addProductPage = (arr) => {
                         </div>
                     </div>
                 </a>
-                <button class="addtocart">Add to Cart</button>
+                <button class="addtocart">Thêm vào giỏ</button>
             </div>
         `
     }).join("")
@@ -116,9 +116,11 @@ const ctnProductList = document.querySelector('.ctn__product-list')
 const ctnHeaderName = document.querySelector('.ctn__header-tittle')
 
 console.log(ctnHeaderName);
-ctnHeaderName.textContent = `TẤT CẢ`
-ctnProductList.innerHTML = addProductPage(arrProduct)
-funAddToCart()
+if(ctnHeaderName != null) {
+    ctnHeaderName.textContent = `TẤT CẢ`
+    ctnProductList.innerHTML = addProductPage(arrProduct)
+    funAddToCart()
+}
 
 // add product on product page
 const btnHeaderProductItem = document.querySelectorAll('.filter__product-item')

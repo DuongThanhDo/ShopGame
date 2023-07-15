@@ -215,6 +215,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     font-size: 15px;
+    transition: all .3s;
 }
 
 .cart__product-price {
@@ -559,7 +560,8 @@ header {
     outline: none;
     background-color: #000;
     margin: 0 10px 0 20px;
-    color: #fff;
+    color: #ccc;
+    text-align: center;
 }
 
 .ctn__product {
@@ -597,6 +599,12 @@ header {
 .ctn__product-list-item {
     font-size: 16px;
     padding: 20px 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.ctn__product-list-item:hover {
+    color: var(--primary-color);
 }
 
 .btn-show p {
@@ -630,11 +638,12 @@ header {
     height: 34px;
     color: #ccc;
     font-weight: 400;
+    margin-left: 12px;
     transition: all .3s;
 }
 
 .filter__product-item:hover {
-    margin-left: 8px;
+    margin-left: 20px;
 }
 
 .filter__product-item:active {
@@ -764,6 +773,7 @@ input[type="range"]::-moz-range-thumb {
     background-color: #000;   
     border:solid 1px rgb(136, 88, 237, .4);
     z-index: 20;
+    padding-bottom: 12px;
 }
 
 .ctn__product-sort-item {
@@ -772,10 +782,15 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     align-items: center;
     padding: 20px;
+    transition: all .3s;
 }
 
 .ctn__product-sort-item:hover {
-    background-color: #141414;
+    margin-left: 8px;
+}
+
+.ctn__product-sort-item:active {
+    color: var(--primary-color);
 }
 
 .ctn__product-list {
@@ -927,13 +942,17 @@ footer {
 
 .footer__content-operation button:hover {
     background-color: #fff;
-    color: #000;
+    color: var(--primary-color);
 }
 
 .footer__category-list {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.footer__category-list ul {
+    width: 22%;
 }
 
 .footer__category-header {
@@ -946,6 +965,12 @@ footer {
 .footer__category-item a {
     margin: 20px 0;
     color: #ccc;
+    transition: all .3s;
+}
+
+.footer__category-item a:hover {
+    margin-left: 8px;
+    color: var(--primary-color);
 }
 
 .footer__link {
@@ -970,11 +995,22 @@ footer {
 
 .footer__link-card ul li img {
     width: 80%;
+    transition: all .3s;
 }
 
-.footer__link-app ul li a {
+.footer__link-card ul li:hover img {
+    scale: 130%;
+}
+
+.footer__link-app ul li .fa-brands {
     margin-right: 50px;
     color: #fff;
+    transition: all .2s;
+}
+
+.footer__link-app ul li:hover .fa-brands {
+    color: var(--primary-color);
+    scale: 140%;
 }
 
 /* page cart----------------------------------------------------- */

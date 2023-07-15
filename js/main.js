@@ -57,10 +57,12 @@ export const arrTypeProduct = (arr, type) => {
 const ctnShowList = document.querySelectorAll('.ctn__show-list')
 const copyArr = arrProduct.slice(0, 6)
 const copyArrGame = arrTypeProduct(arrProduct, 'game').slice(0, 6)
-// if(ctnShowList[0] !== null) {
-//     ctnShowList[0].innerHTML = addProductPage(copyArr)
-//     ctnShowList[1].innerHTML = addProductPage(copyArrGame)
-// }
+console.log(ctnShowList);
+if(ctnShowList.length != 0) {
+    ctnShowList[0].innerHTML = addProductPage(copyArr)
+    ctnShowList[1].innerHTML = addProductPage(copyArrGame)
+}
+
 
 const cartOpen = document.querySelector('.cart-open')
 const btnCart = document.querySelector('.cart')
