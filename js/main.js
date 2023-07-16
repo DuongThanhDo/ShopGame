@@ -171,7 +171,7 @@ const UD_product = () => {
     delProduct()
     const cartSubtotalMoney = document.querySelectorAll('.cart__subtotal-money')
     cartSubtotalMoney.forEach(item => {
-        item.textContent = `${sumMoney()}`
+        item.textContent = `${sumMoney()} đ`
     })
     countProduct.textContent = arrCart.length
 }

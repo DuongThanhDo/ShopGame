@@ -35,7 +35,10 @@ export const addProductCart = (arrCart) => {
                 <img src="./assets/img/products/${item.img}" alt="">
                 <div class="cart__product-infor">
                     <div class="cart__product-name">${item.name}</div>
-                    <div class="cart__product-price">$${item.newPrice}</div>
+                    <div class="cart__product-price">
+                        ${item.newPrice}
+                        <span>đ</span>
+                    </div>
                     <div class="cart__product-quantity">
                         <div class="cart__product-reduce">-</div>
                         ${item.quantity}

@@ -492,6 +492,10 @@ header {
     border: none !important; */
 }
 
+.ctn__product-price sup {
+    margin-left: 2px;
+}
+
 .ctn__product-item > button {
     width: 200px;
     height: 40px;
