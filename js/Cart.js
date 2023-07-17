@@ -17,7 +17,7 @@ export const cartView = () => {
         </div>
 
         <footer class="cart__footer">
-            <button>View Cart</button>
+            <button>Xem giỏ hàng</button>
         </footer>
     `
 }
