@@ -1167,3 +1167,66 @@ footer {
     background-color: rgb(119, 71, 225);
     color: #bdbdbd;
 }
+
+/* contact page */
+.ctn_contact {
+    /* padding: 0 120px; */
+    margin-top: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    text-align: justify;
+}
+
+.ctn_contact-title,
+.ctn_message-title {
+    font-size: 26px;
+}
+
+.ctn_contact-item {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.ctn_contact-item i {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.ctn_message-input input,
+.ctn_message-input textarea {
+    padding: 8px;
+    width: 360px;
+    height: 40px;
+    margin: 12px 0;
+    border: solid 2px var(--primary-color);
+    background: none;
+    color: #ccc;
+    transition: all .3s;
+}
+
+.ctn_message-input input:hover,
+.ctn_message-input textarea:hover {
+    background-color: #222222;
+}
+ 
+.ctn_message-input textarea {
+    width: 100%;
+    height: 160px;
+}
+
+.ctn_message button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all .3s;
+}
+
+.ctn_message button:hover {
+    border: solid 2px #fff;
+}

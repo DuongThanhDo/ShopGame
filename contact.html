@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DTĐ Shop</title>
+    <title>Liên hệ</title>
     <link
         rel="stylesheet"
         type="text/css"
@@ -36,7 +36,7 @@
                     </li>
                     
                     <li class="header__navbar-item"><a href="">VỀ CHÚNG TÔI</a></li>
-                    <li class="header__navbar-item btn-lognin">
+                    <li class="header__navbar-item btn-lognin header__navbar-item--active">
                         <a href="contact.html">LIÊN HỆ</a>
                     </li>
                     <li class="header__navbar-item">
@@ -48,73 +48,52 @@
         </header>
 
         <div class="container no-Cart">
-            <div class="ctn__intro">
-                <div class="ctn__intro-bg"><img src="./assets/img/background.jpg" alt=""></div>
-                <div class="ctn__intro-product">
-                    <div class="ctn__intro-infor">
-                        <p>Game mới ra mắt</p>
-                        <div class="ctn__intro-name">CYBER KID INFINITE</div>
-                        <p class="onSteam">Đã có trên steam</p>
-                        <div class="ctn__intro-buynow">
-                            <a href="products.html"><button>Mua ngay</button></a>
-                        </div>
-                    </div>
-                    <img src="./assets/img/Cyber copy.webp" alt="">
-                </div>
-            </div>
-
-            <div class="ctn__show gird">
-                <div class="ctn__show-head">
-                    <p class="ctn-title">BÁN CHẠY NHẤT</p>
-                    <a href="products.html"><button>Xem tất cả</button></a>
-                </div>
-
-                <div class="ctn__show-list ctn__slick-list"></div>
-            </div>
-
-            <div class="ctn__category gird">
-                <div class="ctn__category-title">
-                    <p class="ctn-title">THEO THỂ LOẠI</p>
-                </div>
-
-                <div class="ctn__category-list">
-                    <div class="ctn__category-item">
-                        <a href="products.html">
-                            <div class="ctn__category-item-img">
-                                <div class="ctn__category-item-img-lopgia"></div>
-                                <img src="./assets/img/products/controller1.webp" alt="">
+            <div class="ctn_contact gird">
+                <div class="ctn_contact-infor">
+                    <div class="ctn_contact-title">Liên hệ</div>
+                    <ul class="ctn_contact-list">
+                        <li class="ctn_contact-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="ctn_contact-item-content">
+                                <p>Giờ mở cửa</p>
+                                <p>9:00 - 21:00</p>
                             </div>
-                            <div class="ctn__category-type">Bộ điều khiển</div>
-                        </a>
-                    </div>
-                    <div class="ctn__category-item">
-                        <a href="products.html">
-                            <div class="ctn__category-item-img">
-                                <div class="ctn__category-item-img-lopgia"></div>
-                                <img src="./assets/img/products/game2.webp" alt="">
+                        </li>
+                        <li class="ctn_contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="ctn_contact-item-content">
+                                <p>Địa chỉ</p>
+                                <p>1 kiệt 10 phường An Cựu</p>
                             </div>
-                            <div class="ctn__category-type">Trò chơi</div>
-                        </a>
-                    </div>
-                    <div class="ctn__category-item">
-                        <a href="products.html">
-                            <div class="ctn__category-item-img">
-                                <div class="ctn__category-item-img-lopgia"></div>
-                                <img src="./assets/img/products/accessories1.webp" alt="">
+                        </li>
+                        <li class="ctn_contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="ctn_contact-item-content">
+                                <p>Hỗ trợ khách hàng</p>
+                                <p>0902207049</p>
                             </div>
-                            <div class="ctn__category-type">Phụ kiện</div>
-                        </a>
+                        </li>
+                        <li class="ctn_contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="ctn_contact-item-content">
+                                <p>Sẵn lòng trả lời các câu hỏi về sản phẩm tại:</p>
+                                <p>dohong@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="ctn_message">
+                    <div class="ctn_message-title">Để lại lời nhắn</div>
+                    <div class="ctn_message-input">
+                        <input type="text" placeholder="Tiêu đề">
+                        <input type="text" placeholder="Học và tên">
+                        <input type="text" placeholder="Số điện thoại">
+                        <input type="text" placeholder="Email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Nội dung"></textarea>
                     </div>
+                    <button>Gửi đi</button>
                 </div>
-            </div>
-
-            <div class="ctn__show ctn__game-trrending gird">
-                <div class="ctn__show-head">
-                    <p class="ctn-title">TRENDING GAMES</p>
-                    <a href="products.html"><button>Xem tất cả</button></a>
-                </div>
-
-                <div class="ctn__show-list ctn__slick-list"></div>
             </div>
         </div>
 
@@ -224,7 +203,6 @@
         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
-    <script type="module" src="./js/slick.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
