@@ -1169,7 +1169,7 @@ footer {
 }
 
 /* contact page */
-.ctn_contact {
+.ctn__contact {
     /* padding: 0 120px; */
     margin-top: 80px;
     width: 100%;
@@ -1178,26 +1178,27 @@ footer {
     text-align: justify;
 }
 
-.ctn_contact-title,
-.ctn_message-title {
+.ctn__contact-title,
+.ctn__message-title {
     font-size: 26px;
 }
 
-.ctn_contact-item {
+.ctn__contact-item {
     display: flex;
     align-items: center;
-    margin: 12px 0;
+    margin: 24px 0;
     font-weight: 300;
     color: #ccc;
 }
 
-.ctn_contact-item i {
+.ctn__contact-item i {
     font-size: 24px;
     margin-right: 12px;
+    color: var(--primary-color);
 }
 
-.ctn_message-input input,
-.ctn_message-input textarea {
+.ctn__message-input input,
+.ctn__message-input textarea {
     padding: 8px;
     width: 360px;
     height: 40px;
@@ -1208,17 +1209,17 @@ footer {
     transition: all .3s;
 }
 
-.ctn_message-input input:hover,
-.ctn_message-input textarea:hover {
+.ctn__message-input input:hover,
+.ctn__message-input textarea:hover {
     background-color: #222222;
 }
  
-.ctn_message-input textarea {
+.ctn__message-input textarea {
     width: 100%;
     height: 160px;
 }
 
-.ctn_message button {
+.ctn__message button {
     width: 100%;
     height: 40px;
     font-size: 16px;
@@ -1227,6 +1228,6 @@ footer {
     transition: all .3s;
 }
 
-.ctn_message button:hover {
+.ctn__message button:hover {
     border: solid 2px #fff;
 }
