@@ -300,6 +300,14 @@
     .ctn__product-sort {
         top: -80px;
     }
+
+    .cart__container {
+        height: 560px;
+    }
+
+    .cart__product-del {
+        display: block;
+    }
 }
 
 /* Tablet */
