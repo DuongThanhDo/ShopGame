@@ -32,6 +32,10 @@ header {
     display: none;
 }
 
+.header__navbar-header {
+    display: none;
+}
+
 .header__navbar-list {
     display: flex;
     align-items: center;

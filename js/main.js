@@ -217,4 +217,24 @@ viewCart.onclick = () => {
     isCart.classList.remove('displayDisabled')
     
     btnCart.classList.add('hidden')
+    
+    headerNavbar.classList.remove('display')
+}
+
+// mobile
+const listNavbarMobile = document.querySelector('.header_navbar-not-pc')
+const headerNavbar = document.querySelector('.header__navbar')
+const listHaederNavbar = document.querySelector('.header__navbar-list')
+console.log(listNavbarMobile);
+
+listNavbarMobile.onclick = () => {
+    headerNavbar.classList.add('display')
+}
+
+listHaederNavbar.onclick = (event) => {
+    event.stopPropagation();
+}
+
+headerNavbar.onclick = () => {
+    headerNavbar.classList.remove('display')
 }
