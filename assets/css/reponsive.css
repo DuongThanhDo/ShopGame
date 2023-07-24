@@ -97,7 +97,8 @@
     }
 
     .container-up {
-        padding: 10px 0 100px 0;
+        padding-top: 1px;
+        margin-top: -60px;
     }
 
     .ctn__intro {
@@ -307,6 +308,65 @@
 
     .cart__product-del {
         display: block;
+    }
+
+    /* page cart  */
+    .is_cart {
+        width: 100%;
+    }
+
+    .ctn__cart {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px;
+    }
+
+    .cart__product {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cart__container {
+        margin-bottom: 24px;
+    }
+
+    .ctn__cart-products {
+        padding: 0;
+    }
+
+    /* page login */
+    .ctn_auth {
+        margin-top: -60px;
+        width: 100%;
+    }
+
+    .from-lognIn,
+    .from-register {
+        width: 400px;
+    }
+
+    /* page contact */
+    .ctn__contact {
+        margin-top: 40px;
+        padding: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ctn__message-input input, 
+    .ctn__message-input textarea {
+        width: 100%;
+    }
+
+    .ctn__contact-item {
+        margin: 12px 0;
+    }
+
+    .ctn__contact-infor {
+        margin-bottom: 20px;
+    }
+
+    /* page poduct */
+    .mobile-serch {
+        display: none;
     }
 }
 

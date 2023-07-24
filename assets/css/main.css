@@ -1251,7 +1251,7 @@ footer {
 
 .from-lognIn,
 .from-register {
-    min-width: 600px;
+    width: 600px;
     text-align: center;
     border-radius: 20px;
     padding: 50px 30px;
