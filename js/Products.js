@@ -103,14 +103,6 @@ if(ctnProductSort != null) {
     }
 }
 
-const ctnProductSortItem = document.querySelectorAll('.ctn__product-sort-item')
-
-ctnProductSortItem.forEach((item, index) => {
-    item.onclick = () => {
-        document.querySelector('.ctn__product-sort-name').innerHTML = item.textContent
-    }
-})
-
 // add product
 const ctnProductList = document.querySelector('.ctn__product-list')
 const ctnHeaderName = document.querySelector('.ctn__header-tittle')
