@@ -33,7 +33,7 @@ export const addProductPage = (arr) => {
                         <p>${item.name}</p>
                         <div class="ctn__product-price">
                             <p>${item.newPrice}</p>
-                            <sup>đ</sup>
+                            <sup>VNĐ</sup>
                         </div>
                     </div>
                 </a>

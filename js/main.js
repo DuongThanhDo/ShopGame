@@ -12,7 +12,6 @@ import {
 } from './Products.js'
 
 // localStorage --------------
-
 const deleteLocalStorage = () => {
     const tempArr = []
     const tempArrText = JSON.stringify(tempArr, undefined, 4)
@@ -128,11 +127,9 @@ const increaseQuantityProduct = () => {
 // delete sản phẩm trong cart
 const delProduct = () => {
     const btnDelProduct = document.querySelectorAll('.cart__product-del')
-    // console.log(btnDelProduct);
     const arrCart = getArrCart()
     btnDelProduct.forEach((btn, index) => {
         btn.onclick = () => {
-            // console.log(index+1, arrCart.length);
             if(index + 1 > arrCart.length) arrCart.splice(index-arrCart.length, 1)
             else arrCart.splice(index, 1)
             setArrCart(arrCart)
@@ -171,7 +168,7 @@ const UD_product = () => {
     delProduct()
     const cartSubtotalMoney = document.querySelectorAll('.cart__subtotal-money')
     cartSubtotalMoney.forEach(item => {
-        item.textContent = `${sumMoney()} đ`
+        item.textContent = `${sumMoney()} VNĐ`
     })
     countProduct.textContent = arrCart.length
 }

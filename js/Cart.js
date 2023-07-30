@@ -37,7 +37,7 @@ export const addProductCart = (arrCart) => {
                     <div class="cart__product-name">${item.name}</div>
                     <div class="cart__product-price">
                         ${item.newPrice}
-                        <span>đ</span>
+                        <span>VNĐ</span>
                     </div>
                     <div class="cart__product-quantity">
                         <div class="cart__product-reduce">-</div>
