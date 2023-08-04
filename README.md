@@ -1,1 +1,1 @@
-Demo : https://duongthanhdo.github.io/ShopGame01/
+Demo : https://duongthanhdo.github.io/ShopGame/
