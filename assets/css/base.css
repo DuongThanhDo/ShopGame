@@ -63,6 +63,28 @@
     }
 }
 
+@keyframes leftRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightLeft {
+    from {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .rotate180 {
     transform: rotate(180deg);
 }

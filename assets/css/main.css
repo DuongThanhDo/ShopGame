@@ -346,6 +346,7 @@ header {
     );
     color: #fff;
     padding: 40px 50px;
+    animation: leftRight ease .6s;
 }
 
 .ctn__intro-infor > p {
@@ -364,6 +365,10 @@ header {
     width: 45%;
     border-radius: 30px;
     box-shadow: 0 5px 20px #252525;
+}
+
+.ctn__intro-product img {
+    animation: rightLeft ease .6s;
 }
 
 .ctn__intro-buynow {
