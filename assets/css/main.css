@@ -16,7 +16,8 @@ header {
 }
 
 .header__logo {
-    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
     margin-left: 50px;
     margin-top: 5px;
 }
@@ -434,7 +435,7 @@ header {
 /* CSS product----------------------------------- */
 
 .ctn__product-item {
-    height: 400px;
+    height: 440px;
     color: #fff;
     display: flex !important;
     flex-direction: column;
@@ -452,6 +453,7 @@ header {
 }
 
 .ctn__product-infor {
+    height: 100%;
     color: #fff;
     position: relative;
 }
@@ -489,8 +491,8 @@ header {
 }
 
 .ctn__product-name {
-    width: 200px;
-    margin: 6px;
+    width: 90%;
+    margin: 12px;
 }
 
 .ctn__product-name > p {
@@ -511,7 +513,7 @@ header {
 }
 
 .ctn__product-item > button {
-    width: 200px;
+    width: 60%;
     height: 40px;
     border: none;
     border-radius: 20px;
@@ -519,7 +521,7 @@ header {
     font-weight: 600;
     color: #fff;
     background-color: var(--primary-color);
-    bottom: 0;
+    bottom: 10%;
     position: absolute;
 }
 
@@ -959,6 +961,10 @@ footer {
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+.footer__category-header i {
+    display: none;
 }
 
 .footer__category-item,

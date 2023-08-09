@@ -242,7 +242,7 @@ export const arrProduct = [
     {
         id: 24,
         img: 'game5.webp',
-        name: 'Kira and the Fading Islands',
+        name: 'Kira and the Fading',
         oldPrice: 0,
         newPrice: 2500,
         quantity: 1,

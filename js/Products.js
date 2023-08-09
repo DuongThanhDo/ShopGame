@@ -157,3 +157,13 @@ btnHeaderProductItem.forEach((item, index) => {
         }, 300);
     }
 })
+
+// mobile
+const filterNoPC = document.querySelector('.ctn_product-filter-no-pc')
+const ctnProductFilter = document.querySelector('.ctn__product-filter')
+
+if (filterNoPC != null) {
+    filterNoPC.onclick = () => {
+        ctnProductFilter.classList.toggle('ctn__product-filter-none')
+    }
+}

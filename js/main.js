@@ -235,3 +235,16 @@ listHaederNavbar.onclick = (event) => {
 headerNavbar.onclick = () => {
     headerNavbar.classList.remove('display')
 }
+
+// 
+const footerCategoryHeader = document.querySelectorAll('.footer__category-header')
+const footerCategoryListItem = document.querySelectorAll('.footer__category-list-item')
+const footerCategoryI = document.querySelectorAll('.footer__category-header i')
+
+
+footerCategoryHeader.forEach((item, index) => {
+    item.onclick = () => {
+        footerCategoryListItem[index].classList.toggle('footer__category-list-item')
+        footerCategoryI[index].classList.toggle('rotate180')
+    }
+})
